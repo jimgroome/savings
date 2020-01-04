@@ -1,8 +1,11 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
 import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
+import days from "../helpers/savings";
 
 const Home = () => {
+  const allDays = days();
+  console.log(allDays);
   return (
     <section className="page-content">
       <MDBContainer fluid>
