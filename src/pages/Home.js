@@ -23,11 +23,19 @@ const Home = () => {
         <MDBRow>
           <MDBCol>
             <h1>
-              {allDays.length} days of saving in {dateFormat(currentDate, 'yyyy')}
+              {allDays.length} days of saving in{" "}
+              {dateFormat(currentDate, "yyyy")}
             </h1>
+            <p>Hello Chelsea!</p>
             <h2>{currentDay.friendly.date}</h2>
-            <p>Today we're banking {currentDay.friendly.increment}, which brings our total to {currentDay.friendly.totalSoFar}.</p>
-            <p>This year, we're aiming for a total of {allDays[allDays.length-1].friendly.totalSoFar}!</p>
+            <p>
+              Today we're banking {currentDay.friendly.increment}, which brings
+              our total to {currentDay.friendly.totalSoFar}.
+            </p>
+            <p>
+              This year, we're aiming for a total of{" "}
+              {allDays[allDays.length - 1].friendly.totalSoFar}!
+            </p>
           </MDBCol>
         </MDBRow>
       </MDBContainer>
