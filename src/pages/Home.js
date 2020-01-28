@@ -26,7 +26,6 @@ const Home = () => {
               {allDays.length} days of saving in{" "}
               {dateFormat(currentDate, "yyyy")}
             </h1>
-            <p>Hello Chelsea!</p>
             <h2>{currentDay.friendly.date}</h2>
             <p>
               Today we're banking {currentDay.friendly.increment}, which brings
